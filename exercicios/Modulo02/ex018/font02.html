@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Comic';
+            src: url(fontes/Water\ Bubble.otf) format(opentype), url(fontes/Comic\ Kids.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+            /*
+                Tipo de Format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced typography)
+                - sgv
+            */
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: burlywood;
+        }
+
+        h1 {
+            font-family: 'Comic', Times, serif;
+            font-size: 5em;
+            text-align: center;
+            color: brown;
+        }
+
+        p {
+            font-family: 'Water';
+            font-size: 1.5em;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quibusdam, nam, sapiente reiciendis nobis nemo corrupti dolorum, voluptatibus sit exercitationem sint reprehenderit? Eveniet officia cum natus? Ratione, dolorum quae!</p>
+</body>
+</html>
