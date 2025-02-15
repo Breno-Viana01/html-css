@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste Imagem de Fundo</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('imagens/wallpaper001.jpg');
+            margin: auto;
+            padding: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+        }
         div.quadrado {
             display: inline-block;
             border: 2px solid black;
@@ -12,17 +22,17 @@
             background-color: gray;
             width: 300px;
             height: 300px;
+
         }
 
         #q1 {
-            background-color: blueviolet;
+            background-color: rgba(135, 183, 235, 0.708);
         }
         #q2 {
-            background-image: linear-gradient(to bottom, red, yellow, green);
+            background-image: linear-gradient(to bottom,  yellow, red);
         }
         #q3 {
-            background-image: url('fundo3.jpg');
-            background-size: cover;
+            background-image: url('imagens/pattern001.png');
         }
 
     </style>
