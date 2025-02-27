@@ -22,9 +22,21 @@
             border: 1px solid #000;
             padding: 10px;
         }
+
+        caption {
+            background-image: linear-gradient(to bottom, #5350508b, rgba(0, 0, 255, 0.187));
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
         thead, tfoot {
-            background-color: #5350508b;
+            background-color: #535050c4;
             color: white;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-image: linear-gradient(to bottom, #5350508b, rgba(0, 0, 255, 0.153));
         }
 
 
@@ -47,15 +59,18 @@
                         TD = Célula do rodapé
     -->
     <table>
+        <caption>
+            População dos Estados Brasileiros
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tfoot>
             <tr>
-                <td>Total de Habitantes</td>
+                <td scope="row">Total de Habitantes</td>
                 <td>211.755.692</td>
             </tr>
         </tfoot>
