@@ -8,6 +8,7 @@
         table {
             width: 100%;
             border-collapse: collapse;
+            text-align: center;
         }
         caption {
             font-size: 1.5em;
@@ -15,11 +16,19 @@
             margin-bottom: 10px;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #514e4ec5;
+            color: white;
         }
         th, td {
             padding: 10px;
             border: 1px solid #000;
+        }
+        .media {
+            color: white;
+            background-color: #514e4ec5;
+        }
+        .area{
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -34,13 +43,13 @@
                 <th rowspan="2" scope="col">Média</th>
             </tr>
             <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <td rowspan="4" scope="rowgroup" class="area">Exatas</td>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -64,15 +73,25 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
-                <th colspan="4">Média de Exatas</th>
+            <tr class="media">
+                <td colspan="4" scope="row" style="text-align: left;">Média de Exatas</td>
                 <td>0.0</td>
             </tr>
             <tr>
-                <th>Humanas</th>
-                <td></td>
+                <td rowspan="2" scope="rowgroup" class="area">Humanas</td>
+                <td>História</td>
                 <td>0.0</td>
                 <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="media">
+                <td colspan="4" scope="row" style="text-align: left;">Média Humanas</td>
                 <td>0.0</td>
             </tr>
 
