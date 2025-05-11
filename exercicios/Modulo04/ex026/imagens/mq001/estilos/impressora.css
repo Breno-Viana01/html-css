@@ -17,6 +17,13 @@ menu {
     display: none; /*oculta o menu na impressão*/
 }
 
+article {
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-size: 1.5em;
+}
+
 article ::after {
     content: " Esse artigo foi impresso com sucesso!";
     font-size: 0.8em;
