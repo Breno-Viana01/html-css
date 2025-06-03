@@ -11,15 +11,32 @@ Desktop: 992px a 1200px
 Grande telas: acima de 1200px
 */
 
-@media print {
+@media print {/*IMPRESSÃO*/
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-   
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+
+    bady {
+        background-image: url(../imagem/back-tablet.jpg);
+
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagem/icon-pc.png);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;} 
    
 }
 
